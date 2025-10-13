@@ -56,6 +56,11 @@ Dort ist auch ein Button, mit dem man dann die xml-Rechnung mailen kann.
 Der Mailprozess muss angepasst werden - dort sind hardkodierte Daten/Empfänger und Mail-Text drin.
 
 Eine Rechnung als PDF erstelle ich über TIBCO-Jasper reports...
+Oben : "Jasper_Reports_6.16_VC_XRECHNUNG.jrxml"
+
+Ich kann für Oracle APEX in Kombination mit Jasper reports den Hosting Provider Maxapex.com empfehlen. Alle meine produktiven Anwendungen - auch für zahlende Kunden - laufen dort seit 5-6 Jahren ohne Downtime.
+
+Siehe auch: https://bfw-design.de
 
 Wittorf, 6.11.24
 
