@@ -33,7 +33,7 @@ prompt APPLICATION 320 - xRechnung_ZugFerdApp
 -- Application Export:
 --   Application:     320
 --   Name:            xRechnung_ZugFerdApp
---   Date and Time:   00:03 Tuesday October 14, 2025
+--   Date and Time:   00:15 Tuesday October 14, 2025
 --   Exported By:     FISCHER
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -112,7 +112,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_value_01=>'xRechnung_App'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>6
-,p_version_scn=>1380917731
+,p_version_scn=>1380920802
 ,p_print_server_type=>'NATIVE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'
@@ -8284,9 +8284,9 @@ wwv_flow_imp_page.create_page_process(
 '    -- Pass the CLOB to your XML parsing package',
 '    -- xml_invoice_pkg.import_invoice(l_file_clob);',
 '    -- procedure:',
-'    --IMPORT_UBL_UNCEFACT(l_file_clob); -- weiche detects if ubl- or uncefact- Format',
+'    IMPORT_UBL_UNCEFACT(l_file_clob); -- weiche detects if ubl- or uncefact- Format',
 '    ',
-'    import_invoice_uncefact(l_file_clob, l_filename); -- nur ZugFerd/UNCEFACT Format verarbeiten',
+'    --import_invoice_uncefact(l_file_clob, l_filename); -- nur ZugFerd/UNCEFACT Format verarbeiten',
 '',
 '    -- Free up the temporary CLOB',
 '    DBMS_LOB.freetemporary(l_file_clob);',
