@@ -46,7 +46,7 @@ Es sind dazu 4 pl/sql-procedures notwendig:
 
 4) IMPORT_UBL_UNCEFACT.PLS - eine Weiche, die beim Import entscheidet, ob Programm 2) oder 3) genommen werden soll.
 
-5) APEX-Anwendung mit Apex-Workspace-User-Authentication
+Und es gibt das Rechnungsmodul als APEX-Anwendung mit Apex-Workspace-User-Authentication
 
 Vorgehensweise:
 
@@ -54,25 +54,32 @@ Die APEX-Anwendung APEX_24.1.2_XML_IMPORTIEREN_APP_f320.sql importieren.
 
 Einloggen mit WS-User (APEX workspace Authentication).
 
-Import:
+<b>Import:</b>
 
 Startseite: [ Importieren ] - oder - [ Generieren ]
 
 Auf der Import-Startseite kann man (zur Zeit nur) xml-Rechnungen im ZUGFeRD-Format importieren.
-Wenn man beide Formate importieren möchte, müßte man das Procedure mit der "Weiche" aufrufen...
-Bei Bedarf die DDL's der Tabellen anfragen bei Bernhard@fischer-Wasels.de
+Wenn man beide Formate importieren möchte, müßte man das Procedure mit der "Weiche" aufrufen (oben Nr. 4)
 
 Der Import nutzt 8 Tabellen, die ich an die Namespaces bzw. XMLElements angelehnt habe.
+
 X_BUYERTRADEPART
+
 X_SELLERTRADEPARTY
+
 X_EXCHANGEDDOCUMNT - Rechnung_invoice_header
+
 X_EXCHANGEDDOCUMENTCONTEXT
+
 X_SUPPLYCHAINTRADELINEITEM - Rechnungs-Positionen
+
 X_SUPPLYCHAINTRADETRANSACTION
+
 X_TRADETAX
+
 X_INCLUDEDNOTES
 
-ZUGFeRD-XML Generieren:
+<b>"Export": ZUGFeRD-XML Generieren:</b>
 
 Rechnung erstellen (Tabellen: VC_RECHNUNG und VC_RECHNUNG_POS)  und dann Button [xml generieren] klicken
 Es wird dann eine ZUGFeRD-xml erstellt (ohne UST bzw. UST = 0.00 )und in die Tabelle VC_DATEIEN abgelegt (clob/xmltype).
@@ -88,6 +95,12 @@ Eine Rechnung als PDF erstelle ich über TIBCO-Jasper reports...
 Oben : "Jasper_Reports_6.16_VC_XRECHNUNG.jrxml"
 
 Ich kann für Oracle APEX in Kombination mit Jasper reports den Hosting Provider Maxapex.com empfehlen. Alle meine produktiven Anwendungen - auch für zahlende Kunden - laufen dort seit 5-6 Jahren ohne Downtime.
+
+Maxapex bietet neben dem <b>APEX Hosting auch einen Jasper Reports SERVER</b>, sodaß man in Jasper Reports Studio entwickelte Formulare dort laufen lassen kann und sie von APEX aus ansprechen kann.
+
+Maxapex ist stets auf der aktuellen APEX Version (aktuell 24.2.) und man "mietet" dort quasi die Oracle Datenbank (XE) mit APEX und Jasper Reports Server.
+
+Mehr auf https://maxapex.com
 
 Siehe auch: https://bfw-design.de
 
