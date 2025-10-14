@@ -23,7 +23,7 @@ Quelle: https://www.huengsberg.com/edi-blog/edi/zugferd-vs-xrechnung.html
 
 Da der von mir EDV-mäßig betreute Sportverein auch diese Anforderungen erfüllen muß, habe ich mich mit diesem Thema beschäftigt.
 
-Gemeinnützige Vereine sind zwar eigentlich von diesen Anforderungen ausgenommen, aber in dem Moment, wo der Verein zum Bespiel kommerzielle Einnahmen hat (wie aus Bandenwerbung) gilt diese Ausnahme nicht mehr...
+Gemeinnützige Vereine sind zwar eigentlich von diesen Anforderungen ausgenommen, aber in dem Moment, wo der Verein kommerzielle Einnahmen hat (wie z.B. aus Bandenwerbung oder Trikotwerbung), gilt diese Ausnahme nicht mehr...
 
 
 "Export"
