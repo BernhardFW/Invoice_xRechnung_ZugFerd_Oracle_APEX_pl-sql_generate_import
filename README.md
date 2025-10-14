@@ -46,9 +46,11 @@ Es sind dazu 4 pl/sql-procedures notwendig:
 
 4) IMPORT_UBL_UNCEFACT.PLS - eine Weiche, die beim Import entscheidet, ob Programm 2) oder 3) genommen werden soll.
 
-Und es gibt das Rechnungsmodul als APEX-Anwendung mit Apex-Workspace-User-Authentication
+Und es gibt das Rechnungsmodul als APEX-Anwendung mit Apex-Workspace-User-Authentication.
 
-Vorgehensweise:
+---------------------------------
+<b>Vorgehensweise:</b>
+---------------------------------
 
 Die APEX-Anwendung APEX_24.1.2_XML_IMPORTIEREN_APP_f320.sql importieren.
 
