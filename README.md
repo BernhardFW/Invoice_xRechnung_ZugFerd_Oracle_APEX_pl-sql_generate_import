@@ -81,6 +81,7 @@ X_TRADETAX
 
 X_INCLUDEDNOTES
 
+
 <b>"Export": ZUGFeRD-XML Generieren:</b>
 
 Rechnung erstellen (Tabellen: VC_RECHNUNG und VC_RECHNUNG_POS)  und dann Button [xml generieren] klicken
