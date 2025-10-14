@@ -6,7 +6,7 @@ ZUGFeRD - xRechnung Importieren/Generieren - how to:
 
 -----------------------------------------------------
 
-Allgemein:
+<b>Allgemein:</b>
 
 Ab dem 01.01.2025 gilt die E-Rechnung für B2B Unternehmen als verpflichtend, obgleich noch einige, wenige Ausnahmen bis 2027 vom Gesetzesgeber gewährt werden. Ab 2028 müssen dann alle B2B Unternehmen die Anforderungen von elektronischen Rechnungen erfüllen. Eine E-Rechnung stellt Rechnungsinhalte in einem strukturierten und maschinell lesbaren Datensatz dar. Ein Rechnungssteller kann diese E-Rechnungen mittels „XRechnung“ oder „ZUGFeRD“ einreichen.
 
@@ -21,9 +21,14 @@ Quelle: https://www.huengsberg.com/edi-blog/edi/zugferd-vs-xrechnung.html
 
 <b>Mein Ansatz:</b>
 
+Da der von mir EDV-mäßig betreute Sportverein auch diese Anforderungen erfüllen muß, habe ich mich mit diesem Thema beschäftigt.
+
+Gemeinnützige Vereine sind zwar eigentlich von diesen Anforderungen ausgenommen, aber in dem Moment, wo der Verein zum Bespiel kommerzielle Einnahmen hat (wie aus Bandenwerbung) gilt diese Ausnahme nicht mehr...
+
+
 "Export"
 
-Im "APEX Rechnungsmodul" kann man eine Rechnung erstellen und diese als PDF und XML per Email versenden.
+Im "APEX Rechnungsmodul" kann man eine Rechnung erstellen und diese als PDF und XML per Email versenden. Die PDF-Rechnung erstelle ich mittels <a target=new href ="https://www.jaspersoft.com/products/jaspersoft-community">TIBCO Jasper Reports (Community Edition).</a>
 
 "Import"
 
