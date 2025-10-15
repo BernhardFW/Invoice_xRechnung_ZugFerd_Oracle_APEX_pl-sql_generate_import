@@ -56,15 +56,33 @@ Und es gibt das Rechnungsmodul als APEX-Anwendung mit Apex-Workspace-User-Authen
 <b>Vorgehensweise:</b>
 ---------------------------------
 
-Die APEX-Anwendung APEX_24.1.2_XML_IMPORTIEREN_APP_f320.sql importieren.
+Die APEX-Anwendung <b>"APEX_24_2_Rechnung_und_ZugFerd_xml_generieren_App_f320.sql"</b> importieren.
 
 Einloggen mit WS-User (APEX workspace Authentication).
 
 <img src="images/Screenshot 2025-10-15 085537.png" alt="APEX Rechnungsmodul" />
 
+
+<b>"Export": ZUGFeRD-XML Generieren:</b>
+
+Rechnung erstellen (Tabellen: VC_RECHNUNG und VC_RECHNUNG_POS)  und dann Button [xml generieren] klicken
+Es wird dann eine ZUGFeRD-xml erstellt (ohne UST bzw. UST = 0.00 )und in die Tabelle VC_DATEIEN abgelegt (clob/xmltype).
+Mehrere UST/MWSt-Sätze müssten noch ergänzt werden (bei der Generierung der xml-datei).
+
+--> Region ganz unten "XML-Dateien in VC_DATEIEN"
+
+Dort ist auch ein Button, mit dem man dann die xml-Rechnung mailen kann.
+
+Der Mailprozess muss angepasst werden - dort sind hardkodierte Daten/Empfänger und Mail-Text drin.
+
+Eine Rechnung als PDF erstelle ich über TIBCO-Jasper reports...
+siehe oben im Verzeichnis "Jasper Reports sources": "Jasper_Reports_6.16_VC_XRECHNUNG.jrxml" (mehr dazu siehe unten)
+
+<b>OPTIONAL:</b> - aktuell nicht Teil der APEX-App....
+
 <b>Import:</b>
 
-Startseite: [ Rechnung einlesen ] - oder - [ Generieren ]
+Startseite: Buttons [ Rechnung erstellen ] - oder - [ Rechnung importieren ]
 
 Auf der Import-Startseite kann man (zur Zeit nur) xml-Rechnungen im ZUGFeRD-Format importieren.
 Wenn man beide Formate importieren möchte, müßte man das Procedure mit der "Weiche" aufrufen (oben Nr. 4)
@@ -87,21 +105,6 @@ X_TRADETAX
 
 X_INCLUDEDNOTES
 
-
-<b>"Export": ZUGFeRD-XML Generieren:</b>
-
-Rechnung erstellen (Tabellen: VC_RECHNUNG und VC_RECHNUNG_POS)  und dann Button [xml generieren] klicken
-Es wird dann eine ZUGFeRD-xml erstellt (ohne UST bzw. UST = 0.00 )und in die Tabelle VC_DATEIEN abgelegt (clob/xmltype).
-Mehrere UST/MWSt-Sätze müssten noch ergänzt werden (bei der Generierung der xml-datei).
-
---> Region ganz unten "XML-Dateien in VC_DATEIEN"
-
-Dort ist auch ein Button, mit dem man dann die xml-Rechnung mailen kann.
-
-Der Mailprozess muss angepasst werden - dort sind hardkodierte Daten/Empfänger und Mail-Text drin.
-
-Eine Rechnung als PDF erstelle ich über TIBCO-Jasper reports...
-siehe oben im Verzeichnis "Jasper Reports sources": "Jasper_Reports_6.16_VC_XRECHNUNG.jrxml"
 
 Ich kann für Oracle APEX in Kombination mit Jasper reports den Hosting Provider Maxapex.com empfehlen. Alle meine produktiven Anwendungen - auch für zahlende Kunden - laufen dort seit 5-6 Jahren ohne Downtime.
 
