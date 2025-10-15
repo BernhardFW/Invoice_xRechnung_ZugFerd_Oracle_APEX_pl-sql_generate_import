@@ -60,7 +60,7 @@ Einloggen mit WS-User (APEX workspace Authentication).
 
 <b>Import:</b>
 
-Startseite: [ Importieren ] - oder - [ Generieren ]
+Startseite: [ Rechnung einlesen ] - oder - [ Generieren ]
 
 Auf der Import-Startseite kann man (zur Zeit nur) xml-Rechnungen im ZUGFeRD-Format importieren.
 Wenn man beide Formate importieren möchte, müßte man das Procedure mit der "Weiche" aufrufen (oben Nr. 4)
