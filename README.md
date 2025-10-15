@@ -60,7 +60,7 @@ Die APEX-Anwendung <b>"APEX_24_2_Rechnung_und_ZugFerd_xml_generieren_App_f320.sq
 
 Einloggen mit WS-User (APEX workspace Authentication).
 
-<img src="ZugFerd_app_screenshot.png" alt="APEX Rechnungsmodul" />
+<img src="/images/ZugFerd_app_screenshot.png" alt="APEX Rechnungsmodul" />
 
 
 <b>"Export": ZUGFeRD-XML Generieren:</b>
