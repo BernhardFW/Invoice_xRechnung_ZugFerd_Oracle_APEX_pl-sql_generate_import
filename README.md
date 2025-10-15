@@ -65,8 +65,9 @@ Einloggen mit WS-User (APEX workspace Authentication).
 
 <b>"Export": ZUGFeRD-XML Generieren:</b>
 
-Rechnung erstellen (Tabellen: VC_RECHNUNG und VC_RECHNUNG_POS)  und dann Button [xml generieren] klicken
-Es wird dann eine ZUGFeRD-xml erstellt (ohne UST bzw. UST = 0.00 )und in die Tabelle VC_DATEIEN abgelegt (clob/xmltype).
+Rechnung erstellen (Tabellen: VC_RECHNUNG und VC_RECHNUNG_POS) und dann Button unten [xml generieren] klicken.
+
+Es wird dann eine ZUGFeRD-xml erstellt (ohne UST bzw. UST = 0.00) und in die Tabelle VC_DATEIEN abgelegt (clob/xmltype).
 Mehrere UST/MWSt-Sätze müssten noch ergänzt werden (bei der Generierung der xml-datei).
 
 --> Region ganz unten "XML-Dateien in VC_DATEIEN"
@@ -74,6 +75,8 @@ Mehrere UST/MWSt-Sätze müssten noch ergänzt werden (bei der Generierung der x
 Dort ist auch ein Button, mit dem man dann die xml-Rechnung mailen kann.
 
 Der Mailprozess muss angepasst werden - dort sind hardkodierte Daten/Empfänger und Mail-Text drin.
+
+Man kann per APEX_Send_mail dann die Rechnung.xml (und wenn vorhanden das PDF) an die Rechnungsempfänger mailen. 
 
 Eine Rechnung als PDF erstelle ich über TIBCO-Jasper reports...
 siehe oben im Verzeichnis "Jasper Reports sources": "Jasper_Reports_6.16_VC_XRECHNUNG.jrxml" (mehr dazu siehe unten)
