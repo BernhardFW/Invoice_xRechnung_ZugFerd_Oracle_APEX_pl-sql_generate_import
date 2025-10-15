@@ -1,10 +1,10 @@
 # Invoice_xRechnung_ZugFerd_Oracle_APEX_pl-sql_generate_import
 Author: Bernhard Fischer-Wasels -13.10.2025
--------------------------------------------
+--------------------------------------------------------------------------------
 
-ZUGFeRD - xRechnung Importieren/Generieren - how to:
+ZUGFeRD.xml und Rechnung erstellen - ZugFerd und xRechnung importieren - how to:
 
------------------------------------------------------
+--------------------------------------------------------------------------------
 
 <b>Allgemein:</b>
 
