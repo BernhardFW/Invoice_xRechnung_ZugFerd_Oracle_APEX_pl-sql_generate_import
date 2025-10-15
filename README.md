@@ -15,7 +15,11 @@ Aber was verbirgt sich hinter diesen Begriffen und worin unterscheiden sie sich?
 ZUGFeRD und X-Rechnung: Was ist das?
 Die XRechnung stellt ein Standardrechnungsformat für den Versand von elektronischen Rechnungen an deutsche Bundesbehörden dar und basiert auf der europäischen Norm EN 16831.
 
-ZUGFeRD ist ein branchenübergreifendes Datenformat für den Austausch elektronischer Rechnungsdaten. Das Format ZUGFeRD steht für Zentraler User Guide des Forums elektronische Rechnung Deutschland und wurde vom Forum elektronische Rechnung Deutschland (FeRD) mit Unterstützung des Bundesministeriums für Wirtschaft und Energie (BMWK) erarbeitet.
+ZUGFeRD ist ein branchenübergreifendes Datenformat für den Austausch elektronischer Rechnungsdaten. Das Format ZUGFeRD steht für 
+
+<b>"Zentraler User Guide des Forums elektronische Rechnung Deutschland"</b> 
+
+und wurde vom Forum elektronische Rechnung Deutschland (FeRD) mit Unterstützung des Bundesministeriums für Wirtschaft und Energie (BMWK) erarbeitet.
 
 Quelle: https://www.huengsberg.com/edi-blog/edi/zugferd-vs-xrechnung.html
 
