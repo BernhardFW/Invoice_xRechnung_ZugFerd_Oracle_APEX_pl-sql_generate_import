@@ -56,6 +56,8 @@ Die APEX-Anwendung APEX_24.1.2_XML_IMPORTIEREN_APP_f320.sql importieren.
 
 Einloggen mit WS-User (APEX workspace Authentication).
 
+<img src="images/logo.png" alt="Company Logo" />
+
 <b>Import:</b>
 
 Startseite: [ Importieren ] - oder - [ Generieren ]
