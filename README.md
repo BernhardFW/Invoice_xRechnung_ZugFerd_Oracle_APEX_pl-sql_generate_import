@@ -2,7 +2,7 @@
 Author: Bernhard Fischer-Wasels -13.10.2025
 --------------------------------------------------------------------------------
 
-ZUGFeRD.xml und Rechnung erstellen - ZugFerd und xRechnung importieren - how to:
+Rechnung und ZugFerd.xml erstellen und mailen - ZugFerd und xRechnung importieren - how to:
 
 --------------------------------------------------------------------------------
 
